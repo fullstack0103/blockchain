@@ -1,0 +1,68 @@
+/**
+  stake section
+*/
+.stake-section {
+
+  .amount-stake-section {
+    background: #F6F6FA;
+    padding: 65px 0px 45px 0px;
+
+    .content {
+      padding: 40px 50px;
+
+      .title {
+        font-weight: bold;
+        font-size: 20px;
+        margin-bottom: 12px;
+      }
+
+      .description {
+        font-size: 16px;
+        opacity: 0.7;
+      }
+
+      .input-number-section {
+        > div {
+          margin-top: 12px;
+          margin-right: 27px;
+        }
+        .input-num {
+          width: 100%;
+          outline: none !important;
+          border: none !important;
+          background: #F6F6FA;
+          border-radius: 100px;
+          padding: 21px 24px;
+          font-weight: normal;
+          font-size: 14px;
+          opacity: 0.6;
+        }
+        .range {
+          margin-top: 25px;
+        }
+        .percent-unit-section {
+          margin-top: 10px;
+          padding-bottom: 20px;
+          span {
+            position: absolute;
+            font-size: 14px;
+            opacity: 0.6;
+            @media (max-width: 576px) {
+              &>span {
+                display: none;
+              }
+            }
+          }
+        }
+        .fill-btn {
+          margin-top: 12px;
+          min-width: 175px;
+          height: 62px;
+        }
+        @media (max-width: 576px) {
+          flex-direction: column;
+        }
+      }
+    }
+  }
+}

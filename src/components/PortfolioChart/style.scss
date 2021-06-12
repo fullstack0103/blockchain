@@ -1,0 +1,74 @@
+.portfolio-chart-section {
+  margin-top: 85px;
+  background: #FFFFFF;
+  box-shadow: 0px 15px 29px rgba(217, 217, 236, 0.519477);
+  border-radius: 50px;
+  .chart-section {
+    padding: 5px 5px 30px 0px;
+  }
+  .chart-detail {
+    padding: 43px 72px 5px 72px;
+    @media (max-width: 768px) {
+      padding: 13px 22px 5px 22px;
+    }
+    .current-price-section {
+      .price {
+        margin-right: 30px;
+        h1 {
+          font-weight: 600;
+          font-size: 80px;
+          text-align: center;
+          color: #0B0A3C;
+          line-height: 97px;
+          margin-bottom: 0px;
+          @media (max-width: 576px) {
+            font-size: 45px;
+          }
+        }
+        span {
+          font-weight: 500;
+          font-size: 20px;
+          line-height: 24px;
+          color: #0B0A3C;
+        }
+      }
+
+      .percent-section {
+        img {
+          width: 15px;
+          height: 8px;
+        }
+        span{
+          margin-left: 5px;
+          font-weight: bold;
+          font-size: 22px;
+          line-height: 27px;
+          color: #16C784;
+        }
+      }
+    }
+
+    .date-unit-section {
+      background: #F6F6FA;
+      border-radius: 100px;
+      padding: 0px 10px;
+      > div {
+        transition: 0.2s;
+        cursor: pointer;
+        padding: 7px 12px;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 24px;
+        color: #0B0A3C;
+        opacity: 0.5;
+        border-right: 1px solid #EBEAF4;
+        &.active {
+          opacity: 1;
+        }
+      }
+      > div:last-child {
+        border: none;
+      }
+    }
+  }
+}

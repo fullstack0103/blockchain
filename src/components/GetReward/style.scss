@@ -1,0 +1,76 @@
+/**
+Get your reward in
+*/
+.get-reward-section {
+  padding: 65px 0px 45px 0px;
+
+  .content {
+    padding: 90px 75px 60px;
+    @media (max-width: 576px) {
+      padding: 40px 20px;
+    }
+
+    .title {
+      font-weight: 600;
+      font-size: 20px;
+      text-transform: capitalize;
+      margin-top: 20px;
+    }
+
+    .time-section {
+      margin-top: 16px;
+      margin-bottom: 30px;
+      .date {
+        font-weight: 600;
+        font-size: 30px;
+        text-align: center;
+      }
+      .date-unit {
+        font-weight: 600;
+        font-size: 11px;
+        text-align: center;
+        text-transform: uppercase;
+      }
+      .percent-bar-section {
+        height: 14px;
+        border-radius: 100px;
+        background: #ECECF3;
+        margin-top: 15px;
+        .percent-bar {
+          background: linear-gradient(85.93deg, #4F4CD1 -1.39%, #B989F8 100%);
+          border-radius: 100px;
+          transition: all 0.3s;
+        }
+      }
+    }
+
+    .btn-section {
+      margin-top: 16px;
+      margin-bottom: 30px;
+      .cover-section {
+        background: #ECECF3;
+        border-radius: 100px;
+        height: 84px;
+        padding: 0px 18px 0px 60px;
+      }
+      justify-content: flex-end;
+      p {
+        font-weight: 600;
+        font-size: 30px;
+        text-align: center;
+        text-transform: uppercase;
+        margin-bottom: 0px;
+        margin-right: 43px;
+      }
+      button {
+        width: 175px;
+        height: 47px;
+        font-weight: 500;
+        font-size: 18px;
+      }
+      @media (max-width: 576px) {
+        justify-content: center;
+      }
+    }
+  }
+}

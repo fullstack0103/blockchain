@@ -1,0 +1,111 @@
+/**
+publish index
+*/
+.publish-index-section {
+  padding: 0px 65px 95px 65px;
+  color: #0B0A3C;
+  @media (max-width: 576px) {
+    padding: 0px 20px 95px 20px;
+  }
+  
+  .token-info-section {
+    margin-bottom: 33px;
+    padding: 43px 35px;
+    background: #F6F6FA;
+    border-radius: 50px;
+    @media (max-width: 576px) {
+      padding: 10px 50px;
+    }
+
+    .detail-section {
+      > .img-section {
+        margin-right: 27px;
+        img {
+          width: 96px;
+          height: 96px;
+          border-radius: 50%;
+        }
+      }
+      .name {
+        font-weight: bold;
+        font-size: 22px;
+        margin-bottom: 12px;
+      }
+      .symbol {
+        font-weight: normal;
+        font-size: 20px;
+      }
+    }
+
+    .token-section {
+      padding-top: 10px;
+      .item {
+        margin-bottom: 22px;
+        > img {
+          width: 28px;
+          height: 28px;
+          margin-right: 15px;
+        }
+        .percent {
+          width: 100%;
+          .percent-bar {
+            height: 28px;
+            background: rgba(92, 83, 214, 0.5);
+            border-radius: 100px;
+          }
+        }
+        
+        > span {
+          font-weight: normal;
+          font-size: 16px;
+          margin-left: 15px;
+        }
+
+      }
+    }
+  }
+
+  .title {
+    font-weight: bold;
+    font-size: 40px;
+    margin-bottom: 22px;
+  }
+
+  .highlight-description {
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 22px;
+  }
+
+  .description {
+    font-weight: normal;
+    font-size: 16px;
+    opacity: 0.7;
+    margin-bottom: 65px;
+  }
+
+  .total-price-section {
+    .price-description {
+      p:first-child {
+        font-weight: bold;
+        font-size: 18px;
+        margin-bottom: 8px;
+      }
+      p:last-child {
+        font-weight: normal;
+        font-size: 16px;
+        opacity: 0.7;
+      }
+    }
+    .price {
+      font-weight: bold;
+      font-size: 26px
+    }
+  }
+
+  .login-btn-section {
+    button {
+      height: 50px;
+    }
+  }
+}

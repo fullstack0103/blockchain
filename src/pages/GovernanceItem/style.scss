@@ -1,0 +1,115 @@
+.governance-item-section {
+  background: #F6F6FA;
+  padding: 70px 0px;
+
+  .item-info-section {
+    > div {
+      margin-bottom: 30px;
+    }
+    .detail-section {
+      padding: 30px;
+
+      .img-detail {
+        img {
+          width: 57px;
+          height: 57px;
+          margin-right: 12px;
+        }
+        > div {
+          .status-section {
+            background: #16C784;
+            border-radius: 100px;
+            padding: 0px 12px;
+            margin-right: 12px;
+            height: 22px;
+            span {
+              font-weight: 500;
+              font-size: 14px;
+              color: #FFFFFF;
+            }
+          }
+
+          .title-section {
+            font-weight: 500;
+            font-size: 16px;
+          }
+
+          .id-section {
+            font-size: 16px;
+            opacity: 0.5;
+          }
+        }
+      }
+
+      .percent-color-section {
+        margin-top: 55px;
+        > div {
+          .name {
+            font-size: 12px;
+            width: 70px;
+          }
+          .percent-bar-section {
+            margin-right: 12px;
+            background: #ECECF3;
+            width: 194px;
+            height: 10px;
+            border-radius: 100px;
+            .agree-bar {
+              background: #16C784;
+              border-radius: 100px;
+            }
+            .disagree-bar {
+              background: #FF003D;
+              border-radius: 100px;
+            }
+          }
+          .percent {
+            font-size: 12px;
+          }
+        }
+      }
+    }
+
+    .btn-section {
+      padding: 30px 50px;
+      .btn-group {
+        button {
+          width: 150px;
+          height: 42px;
+          margin-bottom: 21px;
+          &:first-child {
+            margin-right: 10px;
+          }
+        }
+      }
+      .weight-section {
+        font-weight: 500;
+        font-size: 16px;
+      }
+      .impact-section {
+        margin-top: 16px;
+        font-weight: 500;
+        font-size: 16px;
+        span:last-child {
+          color: #16C784;
+        }
+      }
+    }
+  }
+
+  .description-section {
+    padding: 35px 30px;
+    font-size: 16px;
+
+    .title {
+      font-weight: bold;
+      font-size: 16px;
+      margin-bottom: 0px;
+    }
+    p {
+      margin-top: 20px;
+      color:#0B0A3C;
+      font-weight: 400;
+    }
+  }
+}

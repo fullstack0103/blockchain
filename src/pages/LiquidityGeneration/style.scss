@@ -1,0 +1,203 @@
+/**
+    Liquidity genration page
+*/
+.liquidity-generation-page {
+
+  .liquidity-generation-section {
+    padding: 32px 0px 50px 0px;
+    background: #F6F6FA;
+
+    .section-content {
+      padding: 50px;
+
+      .title-section {
+        h1{
+          font-weight: bold;
+          font-size: 30px;
+          margin-bottom: 20px;
+        }
+      }
+
+      .today-price-section {
+        h1 {
+          margin-top: 17px;
+          font-weight: bold;
+          font-size: 30px;
+        }
+      }
+
+      .tomorrow-priece-section {
+        p{
+          margin-top: 17px;
+          font-weight: 500;
+          font-size: 20px;
+        }
+        > div {
+          margin-top: 17px;
+          > img {
+            width: 12px;
+            height: 6px;
+            margin-right: 5px;
+          }
+          > span {
+            font-weight: bold;
+            font-size: 30px;
+            color: #16C784;
+          }
+        }
+      }
+    }
+
+  }
+
+  // enter amount for liquidity event
+  .input-amount-section {
+    padding: 31px 0px 21px;
+    .shadow-round-block {
+      padding: 40px 50px;
+
+      .title {
+        font-weight: bold;
+        font-size: 20px;
+        margin-bottom: 12px;
+      }
+
+      .description {
+        font-size: 16px;
+        opacity: 0.7;
+      }
+
+      .input-number-section {
+        > div {
+          margin-top: 12px;
+          margin-right: 27px;
+        }
+        .input-num {
+          width: 100%;
+          outline: none !important;
+          border: none !important;
+          background: #F6F6FA;
+          border-radius: 100px;
+          padding: 21px 24px;
+          font-weight: normal;
+          font-size: 14px;
+          opacity: 0.6;
+        }
+        .fill-btn {
+          margin-top: 12px;
+          min-width: 175px;
+          height: 62px;
+        }
+        @media (max-width: 576px) {
+          flex-direction: column;
+        }
+      }
+
+    }
+
+    .rang-limit {
+      margin-left: 25px;
+      margin-top: 12px;
+      font-size: 20px;
+      opacity: 0.6;
+    }
+  }
+
+  // balance section
+  .balance-section {
+    padding-bottom: 50px;
+    .shadow-round-block {
+      padding: 40px 50px;
+
+      .title-section {
+        h1 {
+          margin-top: 10px;
+          font-weight: bold;
+          font-size: 30px;
+        }
+        > div {
+          background: #ECECF3;
+          border-radius: 100px;
+          padding: 13px 27px;
+          font-weight: 600;
+          font-size: 30px;
+          text-transform: uppercase;
+        }
+      }
+
+      .btn-section {
+        margin-top: 50px;
+        > div:first-child {
+          margin-right: 23px;
+          @media (max-width: 576px) {
+            margin-right: 0px;
+          }
+        }
+        > div {
+          margin-top: 12px;
+        }
+        p {
+          font-size: 15px;
+          text-align: center;
+          text-transform: capitalize;
+          margin-top: 5px;
+          margin-bottom: 0px;
+        }
+        button {
+          width: 175px;
+          height: 62px;
+          @media (max-width: 576px) {
+            width: 100%;
+          }
+        }
+        @media (max-width: 576px) {
+          flex-direction: column;
+        }
+      }
+    }
+  }
+
+  .range-section {
+    margin-top: 25px;
+    margin-bottom: 20px;
+    .percent-unit-section {
+      margin-top: 10px;
+      padding-bottom: 20px;
+      > div {
+        position: absolute;
+        font-size: 14px;
+        opacity: 0.6;
+        &:first-child {
+          > div {
+            margin-left: 0px;
+          }
+        }
+        > div {
+          position: relative;
+          display: inline;
+          margin-left: -50%;
+          &::before {
+            content: '';
+            position: absolute;
+            left: 13px;
+            top: -36px;
+            height: 26px;
+            width: 26px;
+            background: #FFFFFF;
+            border: 7px solid #F6F6FA;
+            border-radius: 50%;
+          }
+          &.selected::before {
+            border: 7px solid #5c53d6;
+            opacity: 0;
+          }
+          @media (max-width: 576px) {
+            &>span {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}

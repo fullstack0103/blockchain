@@ -1,0 +1,49 @@
+/**
+  create index section
+*/
+.create-index-section {
+  width: 800px;
+  background: #FFFFFF;
+  box-shadow: 0px 15px 29px rgba(217, 217, 236, 0.519477);
+  border-radius: 50px;
+  margin-top: 80px;
+  padding-top: 43px;
+  @media (max-width: 768px) {
+    width: 100%;
+  }
+
+  .step-status-section {
+    width: 100%;
+    margin-bottom: 40px;
+    > div {
+      width: 14px;
+      height: 9px;
+      background: #C4C4C4;
+      border-radius: 100px;
+      margin: 0px 7px;
+      transition: 0.2s;
+      &.active {
+        width: 32px;
+        background: linear-gradient(85.93deg, #4F4CD1 -1.39%, #B989F8 100%);
+      }
+    }
+  }
+
+  .next-btn {
+    cursor: pointer;
+    right: 35px;
+    bottom: 35px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    position: absolute;
+    background: linear-gradient(85.93deg, #4F4CD1 -1.39%, #B989F8 100%);
+    @media (max-width: 576px) {
+      width: 40px;
+      height: 40px;
+      right: 15px;
+    bottom: 15px;
+    }
+  }
+
+}

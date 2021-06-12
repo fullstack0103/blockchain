@@ -1,0 +1,107 @@
+.portfolio-table-section {
+  overflow: auto;
+  background: #FFFFFF;
+  box-shadow: 0px 15px 29px rgba(217, 217, 236, 0.519477);
+  border-radius: 50px;
+  margin: 30px 0px;
+  padding: 10px 0px;
+  table {
+    thead {
+      th {
+        font-size: 16px;
+        line-height: 19px;
+        color: #0B0A3C;
+        opacity: 0.7;
+        font-weight: normal;
+        padding: 16px 0px;
+        &:first-child {
+          padding-left: 30px;
+        }
+      }
+    }
+    tbody {
+      .first-tr-section {
+        border-top: 1px solid #DAD7E2;
+        border-bottom: 1px solid #DAD7E2;
+        td {
+          padding-top: 23px;
+          padding-bottom: 23px;
+        }
+      }
+      tr {
+        td{
+          .percent-change-section {
+            img {
+              width: 11.5px;
+              height: 6px;
+            }
+            span {
+              margin-left: 7.5px;
+              font-style: normal;
+              font-weight: bold;
+              font-size: 14px;
+              color: #16C784;
+            }
+          }
+          &.total-price {
+            font-weight: bold;
+            font-size: 14px;
+          }
+          &.underlying-token-title {
+            padding-top: 23px;
+            padding-bottom: 6px;
+            opacity: 0.7;
+          }
+        }
+        td:first-child {
+          padding-left: 30px;
+          padding-right: 30px;
+          > div {
+            img {
+              width: 25px;
+              height: 25px;
+            }
+            span {
+              font-weight: bold;
+              margin-left: 10px;
+            }
+          }
+        }
+      }
+
+      &.underlying-token {
+        tr {
+          td {
+            padding-top: 23px;
+          }
+          &.percent-color-section{
+            td {
+              padding-top: 23px;
+              padding-bottom: 23px;
+              > div {
+                transition: all 0.3s;
+                height: 10px;
+                background: #F6F6FA;
+                border-radius: 100px;
+                > div {
+                  transition: all 0.3s;
+                  height: 10px;
+                  border-radius: 100px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .see-more {
+    font-weight: bold;
+    font-size: 16px;
+    background: linear-gradient(85.93deg, #4F4CD1 -1.39%, #B989F8 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,154 @@
+/**
+ Add tokens section
+*/
+.add-tokens-section {
+  padding: 0px 80px 95px 80px;
+  @media (max-width: 576px) {
+    padding: 20px;
+  }
+
+  .title {
+    font-weight: bold;
+    font-size: 40px;
+    color: #0B0A3C;
+    margin-bottom: 18px;
+  }
+
+  .description {
+    font-weight: normal;
+    font-size: 20px;
+    color: #0B0A3C;
+    opacity: 0.7;
+    margin-bottom: 18px;
+  }
+
+  .search-section {
+    width: 100%;
+    background: #F6F6FA;
+    border-radius: 100px;
+    transition: 0.2s;
+    input {
+      outline: none !important;
+      padding-top: 18px;
+      padding-bottom: 15px;
+      border: none;
+      background: url(../../assets/img/search-icon.svg) no-repeat scroll 10px 10px;
+      padding-right: 40px;
+      padding-left: 35px;
+      width: 100%;
+      height: 50px;
+      font-size: 14px;
+      background-position: 97% 17px;
+    }
+    .menu {
+      z-index: 100;
+      width: inherit;
+      max-height: 400px;
+      overflow-y: scroll;
+      background-color: #F6F6FA;
+      border: 1px solid #DAD7E2;
+      border-radius: 5px;
+      .item {
+        border-bottom: 1px solid #DAD7E2;
+        background-color: #FFFFFF;
+        cursor: pointer;
+        height: 76px;
+        .image-name {
+          img {
+            width: 30px;
+            height: 30px;
+            margin: 15px;
+          }
+          span {
+            font-weight: bold;
+            color: #1D144F;
+          }
+        }
+        .symbol {
+          color: #9b97b3;
+          padding-right: 25px;
+        }
+        &:hover {
+          background-color: #F4F4FA;
+        }
+      }
+    }
+  }
+
+  .search-result-section {
+    width: 100%;
+    margin-top: 25px;
+    .search-result-head {
+      margin-bottom: 27px;
+    }
+    .token-name {
+      width: 50%;
+      padding-left: 52px;
+      @media (max-width: 576px) {
+        padding-left: 30px;
+      }
+    }
+    .allocation {
+      width: 25%;
+    }
+    .lock-remove {
+      width: 25%;
+    }
+    .search-result-content {
+      padding: 22px 0px;
+      margin-bottom: 15px;
+      background: #F6F6FA;
+      border-radius: 100px;
+      .search-content {
+        font-size: 16px;
+        color: #0B0A3C;
+        .token-name {
+          img {
+            width: 36px;
+            height: 36px;
+            margin-right: 14px;
+            @media (max-width: 576px) {
+              display: none;
+            }
+          }
+          .name {
+            font-weight: bold;
+          }
+          .symbol {
+            font-weight: normal;
+          }
+        }
+        .allocation {
+          opacity: 0.7;
+        }
+        .lock-remove {
+          img {
+            width: 18px;
+            height: 20px;
+            cursor: pointer;
+            &:last-child {
+              margin-left: 20px;
+            }
+          }
+          .lock-icon {
+            width: 18px;
+            height: 20px;
+            cursor: pointer;
+          }
+        }
+      }
+      .search-percent {
+        width: 100%;
+        padding: 15px 52px 0px;
+      }
+    }
+  }
+
+  .empty-result {
+    height: 150px;
+    border: 1px dashed #9b97b3;
+    margin-top: 27px;
+    color: #9b97b3;
+  }
+
+}

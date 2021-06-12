@@ -1,0 +1,28 @@
+/**
+  average stake amount section
+*/
+.average-reward-section {
+  padding: 45px 0px 15px 0px;
+
+  .shadow-round-block {
+    padding: 50px 48px;
+
+    .title-section {
+      h2 {
+        font-weight: bold;
+        font-size: 30px;
+      }
+      p {
+        font-weight: 500;
+        font-size: 20px;
+      }
+    }
+
+    .percent {
+      font-weight: 600;
+      font-size: 70px;
+    }
+
+  }
+  
+}
